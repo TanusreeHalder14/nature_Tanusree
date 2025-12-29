@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>URL Shortener</title>
 </head>
 <body>
     <form method="POST">
         {% csrf_token %}
-        <input type="url" name="original_url" placeholder="Enter URL to shorten" required>
+        <input type="url" name="original_url" placeholder="Enter URL to shorten here" required>
         <button type="submit">Shorten</button>
     </form>
     {% if short_url %}
