@@ -6,7 +6,7 @@
     <title>URL Shortener</title>
 </head>
 <body>
-    <form method="POST">
+    <form method="post" action="/shorten">
         {% csrf_token %}
         <input type="url" name="original_url" placeholder="Enter URL to shorten here" required>
         <button type="submit">Shorten</button>
